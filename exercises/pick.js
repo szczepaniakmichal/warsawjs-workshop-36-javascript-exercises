@@ -18,8 +18,11 @@ function pickVersja2(object, propertyNames) {
     const result = {};
 
     propertyNames.forEach((propertyName) => {
-        if ( Object.keys(object).includes(propertyName)) {
-            result[propertyName] = object [propertyName];
+        // if ( Object.keys(object).includes(propertyName)) {
+        //     result[propertyName] = object [propertyName];
+        // }
+        if (object.hasOwnProperty(propertyName)) {
+            result[propertyName] = object[propertyName];
         }
     });
     return result;
@@ -73,6 +76,7 @@ console.log('result', result);
 // const [firstName, lastName] = ['Jan', 'Kowalski']
 
 //mv only.js pick.js - komenda zmiany nazwy pliku z only.js na pick.js
+// rs - odżwierza ostatnią comende nasłuchu. Tak jak byśmy zapisali projekt i z automatu się odświerza.
 
 //pick - wybieranie
 
