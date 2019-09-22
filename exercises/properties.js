@@ -13,4 +13,4 @@ person['place of birth'] = 'Warszawa'; // to nie jest dobra praktyka
 console.log('person', person);
 
 
-// funkcja,
+
