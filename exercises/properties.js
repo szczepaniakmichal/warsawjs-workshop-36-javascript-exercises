@@ -20,5 +20,5 @@ console.log(person.hasOwnProperty("companyName"), person.hasOwnProperty('company
 console.log('person.email', person.email);
 console.log(person.hasOwnProperty("email"), person.hasOwnProperty('email') );
 
-
+//nodemon
 
